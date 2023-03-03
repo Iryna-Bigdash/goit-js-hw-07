@@ -41,7 +41,7 @@ function createModalWindov(event) {
 
   const instance = basicLightbox.create(
     `
-    <img src="${imgLargeUrl}" width="1280" height="600">
+    <img src="${imgLargeUrl}" width="${window.innerWidth}" height="${window.innerHeight}">
 `,
     {
       onShow,
